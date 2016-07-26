@@ -1,2 +1,0 @@
-5.4.0b24-HTP:2.3.0.0
-StandaloneWindows
