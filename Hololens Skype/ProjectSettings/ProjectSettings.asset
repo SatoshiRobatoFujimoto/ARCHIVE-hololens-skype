@@ -4,6 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 8
+  productGUID: 82bbb644ec5530e4f9570a14faa3e8f5
   AndroidProfiler: 0
   defaultScreenOrientation: 4
   targetDevice: 2
@@ -101,7 +102,6 @@ PlayerSettings:
   xboxOneDisableKinectGpuReservation: 0
   singlePassStereoRendering: 1
   protectGraphicsMemory: 0
-  productGUID: 82bbb644ec5530e4f9570a14faa3e8f5
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
@@ -290,6 +290,7 @@ PlayerSettings:
   ps4attribMoveSupport: 0
   ps4attrib3DSupport: 0
   ps4attribShareSupport: 0
+  ps4attribExclusiveVR: 0
   ps4disableAutoHideSplash: 0
   ps4IncludedModules: []
   monoEnv: 
@@ -345,11 +346,11 @@ PlayerSettings:
   scriptingDefineSymbols: {}
   metroPackageName: Hololens Skype
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 0076863c7d06d301
   metroApplicationDescription: Hololens Skype
   wsaImages: {}
   metroTileShortName: 
@@ -436,7 +437,7 @@ PlayerSettings:
   - iOS::VR::enable
   - tvOS::VR::enable
   Android::VR::enable: 0
-  Metro::VR::enable: 0
+  Metro::VR::enable: 1
   N3DS::VR::enable: 0
   PS3::VR::enable: 0
   PS4::VR::enable: 0
