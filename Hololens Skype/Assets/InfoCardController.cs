@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System;
 
 public class InfoCardController : MonoBehaviour {
 	public event Action<InfoCardController> OnInfoCardClicked;
+	public Image m_avatarImage;
+	public Text m_notificationText;
 
 	private Animator m_myAnimator;
 	private bool m_currentlyIsSmall = false;

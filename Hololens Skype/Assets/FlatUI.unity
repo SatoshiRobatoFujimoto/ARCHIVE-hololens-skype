@@ -479,17 +479,17 @@ MonoBehaviour:
     type: 2}
   m_notificationGrid: {fileID: 489902576}
   m_avatars:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: b2a7eced984f2994cb23ec8725ea59a3, type: 3}
+  - {fileID: 21300000, guid: cb6322aec1e437a42820c5b6a0420c12, type: 3}
+  - {fileID: 21300000, guid: cb6322aec1e437a42820c5b6a0420c12, type: 3}
+  - {fileID: 21300000, guid: b2a7eced984f2994cb23ec8725ea59a3, type: 3}
+  - {fileID: 21300000, guid: b2a7eced984f2994cb23ec8725ea59a3, type: 3}
   m_notificationText:
-  - 
-  - 
-  - 
-  - 
-  - 
+  - <b>Olaf</b> liked your post.
+  - <b>Satya</b> has responded to your message.
+  - <b>Satya</b> wants to be your friend.
+  - <b>Olaf</b> has said something in your thread.
+  - <b>Olaf</b> joined your team.
 --- !u!1 &1396083684
 GameObject:
   m_ObjectHideFlags: 0

@@ -34,6 +34,8 @@ public class NotificationController : MonoBehaviour {
 				RectTransform newTransform = (RectTransform)newNotification.transform;
 				totalWidth += newTransform.sizeDelta.x;
 				InfoCardController controller = newNotification.GetComponent<InfoCardController>();
+				controller.m_avatarImage.sprite = m_avatars[i];
+				controller.m_notificationText.text = m_notificationText[i];
 				controller.OnInfoCardClicked += handleInfoCardPress;
 			}
 			RectTransform gridRect = (RectTransform)m_notificationGrid.transform;
