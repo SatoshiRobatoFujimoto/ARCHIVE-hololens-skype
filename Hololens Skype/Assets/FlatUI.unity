@@ -478,6 +478,8 @@ MonoBehaviour:
   m_notificationPrefab: {fileID: 1000012343245290, guid: e5789e98c4bcc5c46b805bb0d6a329d5,
     type: 2}
   m_notificationGrid: {fileID: 489902576}
+  m_scrollArea: {fileID: 1772295967}
+  m_arrowAnimator: {fileID: 1732455542}
   m_avatars:
   - {fileID: 21300000, guid: b2a7eced984f2994cb23ec8725ea59a3, type: 3}
   - {fileID: 21300000, guid: cb6322aec1e437a42820c5b6a0420c12, type: 3}
@@ -649,6 +651,7 @@ GameObject:
   - 224: {fileID: 1732455539}
   - 222: {fileID: 1732455541}
   - 114: {fileID: 1732455540}
+  - 95: {fileID: 1732455542}
   m_Layer: 5
   m_Name: ScrollRightArrow
   m_TagString: Untagged
@@ -707,6 +710,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1732455538}
+--- !u!95 &1732455542
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1732455538}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a4d24303c1e05f045af7a9f4880f1336, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1772295963
 GameObject:
   m_ObjectHideFlags: 0

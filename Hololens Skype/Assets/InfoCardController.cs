@@ -5,11 +5,19 @@ using System;
 
 public class InfoCardController : MonoBehaviour {
 	public event Action<InfoCardController> OnInfoCardClicked;
+	public event Action<InfoCardController> OnRemoveAnimationFinished;
 	public Image m_avatarImage;
 	public Text m_notificationText;
+	[HideInInspector()]
+	public int id;
 
 	private Animator m_myAnimator;
 	private bool m_currentlyIsSmall = false;
+
+	public void StartRemove()
+	{
+		m_myAnimator.SetTrigger("Remove");
+	}
 
 	public void SetState(bool isSmall)
 	{
@@ -26,6 +34,12 @@ public class InfoCardController : MonoBehaviour {
 	public void Start()
 	{
 		m_myAnimator = GetComponent<Animator>();
+	}
+
+	public void HandleRemoveAnimationFinished()
+	{
+		if (OnRemoveAnimationFinished != null)
+			OnRemoveAnimationFinished(this);
 	}
 
 	public void HandleCardButtonClicked()

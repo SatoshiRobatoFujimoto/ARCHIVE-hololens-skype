@@ -208,6 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_avatarImage: {fileID: 114000013452818052}
   m_notificationText: {fileID: 114000011731741212}
+  id: 0
 --- !u!114 &114000013452818052
 MonoBehaviour:
   m_ObjectHideFlags: 1
