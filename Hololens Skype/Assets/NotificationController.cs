@@ -9,6 +9,7 @@ public class NotificationController : MonoBehaviour {
 	public string[] m_notificationText;
 
 	private InfoCardController m_activeCard;
+	private float m_endOfGrid;
 	
 	void Start () {
 		if (m_avatars.Length != m_notificationText.Length)
@@ -38,16 +39,22 @@ public class NotificationController : MonoBehaviour {
 			RectTransform gridRect = (RectTransform)m_notificationGrid.transform;
 			Vector2 newSize = new Vector2(totalWidth, gridRect.sizeDelta.y);
 			gridRect.sizeDelta = newSize;
-			Vector3 newPos = new Vector3(totalWidth / 2, gridRect.position.y, gridRect.position.z);
-			gridRect.position = newPos;
 		}
 	}
 
 	private void handleInfoCardPress(InfoCardController pressed)
 	{
-		if (m_activeCard != null)
-			m_activeCard.SetState(false);
-		pressed.SetState(true);
-		m_activeCard = pressed;
+		if (m_activeCard == pressed)
+		{
+			pressed.SetState(false);
+			m_activeCard = null;
+		}
+		else
+		{
+			if (m_activeCard != null)
+				m_activeCard.SetState(false);
+			pressed.SetState(true);
+			m_activeCard = pressed;
+		}
 	}
 }
