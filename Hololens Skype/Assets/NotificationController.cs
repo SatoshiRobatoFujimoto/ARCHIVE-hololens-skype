@@ -38,7 +38,7 @@ public class NotificationController : MonoBehaviour {
 			RectTransform gridRect = (RectTransform)m_notificationGrid.transform;
 			Vector2 newSize = new Vector2(totalWidth, gridRect.sizeDelta.y);
 			gridRect.sizeDelta = newSize;
-			Vector3 newPos = new Vector3(totalWidth / 2, gridRect.position.y, gridRect.position.z);
+			Vector3 newPos = new Vector3(totalWidth / 2000, gridRect.position.y, gridRect.position.z);
 			gridRect.position = newPos;
 		}
 	}
