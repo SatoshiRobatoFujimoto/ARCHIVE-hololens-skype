@@ -90,7 +90,7 @@ public class NotificationController : MonoBehaviour {
 		{
 			if (m_activeCard != null)
 			{
-				RemoveNotification(m_activeCard);
+				//RemoveNotification(m_activeCard);
 				m_activeCard.SetState(false);
 			}
 			pressed.SetState(true);
