@@ -17,6 +17,14 @@ public class NotificationController : MonoBehaviour {
 	private InfoCardController m_activeCard;
 	private float m_endOfGrid;
 
+	public InfoCardController ActiveCard
+	{
+		get
+		{
+			return m_activeCard;
+		}
+	}
+
 	public void RemoveNotification(InfoCardController controller)
 	{
 		if (m_activeCard == controller)
@@ -37,6 +45,7 @@ public class NotificationController : MonoBehaviour {
 		};
 
 		controller.StartRemove();
+		OnNotificationSelected(null);
 	}
 
 	void Start () {
